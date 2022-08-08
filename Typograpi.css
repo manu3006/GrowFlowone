@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-wrapper{
+    width: 100%;
+    max-width: 1144px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden ;
+}
+body{
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+   
+}
+p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #030047;
+    font-family: 'Inter', sans-serif;
+
+}
+h1{
+    font-size: 44px;
+    line-height: 68px;
+    font-weight: 800;
+    color: #030047;
+    letter-spacing: .5px;
+    font-family: 'Inter', sans-serif;
+}
+@media (max-width: 767px){
+.banner-heading h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #030047;
+    letter-spacing: .5px;
+    font-family: 'Inter', sans-serif;
+}
+.banner-paragrap p{
+    font-size: 22px;
+    color: #030047;
+    line-height: 30px;
+    margin-bottom: 3.5%;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+
+}
+.hero-banner{
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.right-col {
+    margin-left: 0;
+}
+}
+
+@media (min-width: 767px) and (max-width:1024px){
+    .banner-heading h1 {
+        font-size: 34px;
+        line-height: 1.2;
+        font-weight: bolder;
+        color: #030047;
+        letter-spacing: .8px;
+        font-family: 'Inter', sans-serif;
+    }
+    .banner-paragrap p{
+        font-size: 18px;
+        color: #030047;
+        line-height: 30px;
+        margin-bottom: 3.5%;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+    
+    }
+    
+    
+}
