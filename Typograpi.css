@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
+
 .content-wrapper{
     width: 100%;
     max-width: 1144px;
@@ -25,7 +27,7 @@ body{
 }
 p{
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 30px;
     color: #030047;
     font-family: 'Inter', sans-serif;
@@ -33,15 +35,56 @@ p{
 }
 h1{
     font-size: 44px;
-    line-height: 68px;
-    font-weight: 800;
+    line-height: 65px;
+    font-weight: 700;
     color: #030047;
-    letter-spacing: .5px;
+    letter-spacing: .8px;
     font-family: 'Inter', sans-serif;
 }
+h2{
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    letter-spacing: -0.9px;
+    color: #000000;
+    font-family: 'Inter',sans-serif;
+}
+
+h4{
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.56px;
+    text-transform: initial;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    color: #000;
+}
+.primary-button a{
+    font-size: 13px;
+    text-decoration: none;
+    padding: 16px 32px;
+    border: 2px solid #ffcc3e;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    font-weight: 800;
+    background: transparent;
+    text-align: center;
+    color: #030047;
+   
+}
 @media (max-width: 767px){
+    .module_one {
+        padding: 70px 0px;
+        background-color: #f7f8fc;
+    }
 .banner-heading h1 {
-    font-size: 45px;
+    font-size: 42px;
     line-height: 1.2;
     font-weight: 800;
     color: #030047;
@@ -49,7 +92,7 @@ h1{
     font-family: 'Inter', sans-serif;
 }
 .banner-paragrap p{
-    font-size: 22px;
+    font-size: 18px;
     color: #030047;
     line-height: 30px;
     margin-bottom: 3.5%;
@@ -62,14 +105,66 @@ h1{
     flex-wrap: wrap;
     flex-direction: row;
 }
+.counter_customer .main_col {
+    padding: 77PX 0PX 58px;
+}
+
 .right-col {
     margin-left: 0;
 }
+.counter_customer .main_col {
+    display: block;
+    margin-right: 0%;
+}
+.counter_customer{
+    padding: 100PX 0px;
+}
+.counter_customer .right-border:not(:last-child){
+    border-bottom: 1px solid #ccc;
+    border-right: 0;
+    padding-bottom: 40px;
+}
+.counter_customer .counter-body{
+    max-width: 100%;
+}
+.counter_customer  .main_col>.right-border{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.counter_customer  .main_col>.right-border{
+    margin-right: 0%;
+}
+.counter_customer .counter-text{
+    padding-top: 10px;
 }
 
+.primary-button a {
+font-size: 12px;
+
+}
+.counter_customer .counter_heading h4{
+    font-size: 27px;
+}
+.grow-business_background:before{
+    width: 100%;
+}
+
+}
 @media (min-width: 767px) and (max-width:1024px){
+    h2{
+        font-size: 48px;
+        line-height: 54px;
+        margin-bottom: 10px;
+        font-weight: 900;
+        letter-spacing: -0.9px;
+        color: #000000;
+        font-family: 'Inter',sans-serif;
+    }
     .banner-heading h1 {
-        font-size: 34px;
+        font-size: 30px;
         line-height: 1.2;
         font-weight: bolder;
         color: #030047;
@@ -77,7 +172,7 @@ h1{
         font-family: 'Inter', sans-serif;
     }
     .banner-paragrap p{
-        font-size: 18px;
+        font-size: 16px;
         color: #030047;
         line-height: 30px;
         margin-bottom: 3.5%;
@@ -85,6 +180,19 @@ h1{
         font-family: 'Inter', sans-serif;
     
     }
-    
+    .banner-video{
+        padding: 0px;
+    }
+    .counter_customer .main_col h2 {
+        font-size: 43px;
+        color: #695ff7;
+        letter-spacing: -1.1px;
+        line-height: 54px;
+        font-weight: 700;
+        font-family: 'Inter',sans-serif;
+    }
+    .grow-business_background:before{
+        width: 100%;
+    }
     
 }
