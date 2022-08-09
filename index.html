@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,8 @@
                     <div class="main-button">
 
 
-                        <a class="btn" href="https://www.growflow.com/growflow-documentary?hsCtaTracking=4e5d8eaa-b405-4d30-be75-99764daa5bc0%7C23418406-9074-4354-a875-80afe07ca017">
+                        <a class="btn"
+                            href="https://www.growflow.com/growflow-documentary?hsCtaTracking=4e5d8eaa-b405-4d30-be75-99764daa5bc0%7C23418406-9074-4354-a875-80afe07ca017">
 
                             <span class="button-text">Learn more</span>
                             <span class="button-hover "></span>
@@ -42,8 +44,7 @@
 
                 <div class="right-col">
                     <div class="banner-video">
-                        <div class="pop-img bg-img"
-                            style="background-image:url(./growflow.webp); min-height: 233.33px; width: 100%;">
+                        <div class="pop-img bg-img" style="background-image:url(./growflow.webp); ">
 
                             <a data-fancybox href="https://www.youtube.com/watch?v=rahRaVtEQaM">
 
@@ -60,7 +61,110 @@
         </div>
         </div>
     </section>
-    <script src="./app.js"></script>
+    <!-- module one banner end -->
+
+    <!-- module two start -->
+    <section class="module_two">
+        <div class="content-wrapper">
+            <div class="counter_customer">
+                <div class="counter_heading">
+                    <h4>
+                        Trusted by over 1,498 cannabis cultivators, processors, distributors, and retailers
+                    </h4>
+                </div>
+                    <div class="main_col">
+                        <div class="right-border">
+                            <div class="counter-body">
+                                <h2><span class="counter" data-number="43"></span></h2>
+                                <div class="counter-text">
+                                    <p> Average hours saved each week </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-border">
+                            <div class="counter-body">
+                                <h2><span class="counter" data-number="4"></span>&nbsp; million+</h2>
+                                <div class="counter-text">
+                                    <p> Transactions processed </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-border">
+                            <div class="counter-body">
+                                <h2>$ <span class="counter" data-number="2"></span>B+ </h2>
+                                <div class="counter-text">
+                                    <p> Processed through GrowFlow </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                <div class="primary-button">
+                    <a class="btn_cus"href="#">hear from our customers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MODULE TWO END -->
+    <section class="module_three">
+        <div class="grow-business_background">
+            <div class="content-wrapper">
+                <div class="grow-business">
+                    <div class="grow-business_heading">
+                        <h2> Growing your business at every level</h2>
+                    </div>
+                    <div class="grow-business_paragraph">
+                        <p>Staying compliant means staying in business. We make things simple for all license types in
+                            all jurisdictions from inventory and point of sale, to analytics and state reporting.
+
+                        </p>
+                    </div>
+                    <div class="grow-business_btn">
+                        <a href="">BOOK DEMO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="./app.js"></script> -->
+    <script>
+        var a = 0;
+        $(window).scroll(function () {
+            var oTop = $(".main_col").offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $(".counter").each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr("data-number");
+                    $({
+                        countNum: $this.text()
+                    }).animate(
+                        {
+                            countNum: countTo
+                        },
+
+                        {
+                            duration: 850,
+                            easing: "swing",
+                            step: function () {
+                                //$this.text(Math.ceil(this.countNum));
+                                $this.text(
+                                    Math.ceil(this.countNum).toLocaleString("en")
+                                );
+                            },
+                            complete: function () {
+                                $this.text(
+                                    Math.ceil(this.countNum).toLocaleString("en")
+                                );
+                                //alert('finished');
+                            }
+                        }
+                    );
+                });
+                a = 1;
+            }
+        });
+
+    </script>
 </body>
 
 </html>
