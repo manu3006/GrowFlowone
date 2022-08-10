@@ -28,7 +28,7 @@
 .bg-img {
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 313.33px;
+    min-height: 264.33px;
      width: 100%;
     display: flex;
     flex-direction: row;
@@ -268,4 +268,134 @@ padding: 105PX 0 95px;
 }
 .grow-business_btn a:hover{
     background-color: #ffcc3e;
+}
+/* MODULE THREE END */
+
+/* MODULE FOURE START IMAGE SECTION */
+.module_foure{
+    padding: 100PX 0px;
+}
+.module_foure .section_image{
+    background-image: url(https://www.growflow.com/hubfs/growflow_website_2020/Home-Tabber-Line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 270px;
+}
+.module_foure .section_image{
+    margin-bottom: 41px;
+}
+/* MODULE FOURE end IMAGE SECTION */
+
+
+/* MODULE FIVE START TABBER SECTION */
+.module_five{
+    padding-bottom: 50px;
+}
+.tabber-section .tabber-heading {
+    padding: 0px 0px 48px 84px;
+}
+
+
+.tabber-section .main_tabber{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.tabber-section .tabber-left{
+flex-basis: 50%;
+}
+.tabber-section .tabber-right{
+    flex-basis: 50%;
+}
+.tabber-section .tabber-image img{
+    width: 100%;
+    display: block;
+    box-shadow: 0px 0px 25px gray;
+}
+.tabber-section .tabber-left .tabber-contents li{ 
+    list-style-type: none;
+}
+.tabber-section .tabber-contents li{
+     font-size: 27px;
+    line-height: 34px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    padding-left: 85px;
+
+}
+.tabber-section .tabber-contents li:hover{
+    color: #695ff7;
+
+}
+.tabber-section .tabber-button a{
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    color: #030047;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+
+}
+.tabber-section .tabber-button a:hover{
+    color: #ffcc3e;
+}
+.tabber-button .fa{
+    color: #ffcc3e;
+}
+.tabber-section .content-explain h4{
+    margin: 40px 0px 40px 0px;
+}
+.tabber-section .content-explain p{
+    padding-bottom: 30px;
+}
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+.tabber-section .main_tabber .tabber-contents li.active {
+    color: #695ff7;
+    padding-bottom: 38px;
+    margin-bottom: 37px;
+}
+
+.tabber-section .tabber-contents li.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 82px;
+    height: 2px;
+    background: #ccc;
+    width: 70%;
+    opacity: .5;
+}
+
+.tabber-section .tabber-contents li.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 15px;
+    height: 49px;
+    background-color: #695ff7;
+}
+.mobile-view{
+    display: none;
 }

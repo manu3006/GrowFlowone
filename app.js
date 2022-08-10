@@ -6,6 +6,22 @@ $('.banner-video a').fancybox({
   // end
 
 
+
+  $(document).ready(function(){
+	
+    $('ul.tabes li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+  
+      $('ul.tabs li').removeClass('current');
+      $('.tab_content').removeClass('current');
+  
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    })
+  
+  })
+
+
   
 //   var a = 0;
 // $(window).scroll(function () {
