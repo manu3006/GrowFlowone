@@ -194,11 +194,12 @@ h6 {
 
     .module_foure .section_image {
         width: 100%;
-        min-height: 145px;
+        min-height: 85px;
     }
 
     .module_foure {
-        padding: 16PX 0px;
+        padding: 57PX 0px 12px;
+    }
     }
     .tabber-section .main_tabber {
         display: block;
@@ -334,6 +335,23 @@ h6 {
     .grow-business_background:before {
         width: 100%;
     }
+    .tabber-section .tabber-contents li{
+        font-size: 20px;
+       line-height: 24px;
+       cursor: pointer;
+       font-family: 'Inter', sans-serif;
+       font-weight: 700;
+       color: #000;
+       margin-bottom: 20px;
+       position: relative;
+       z-index: 1;
+       padding-left: 85px;
+   
+   }
+   .module_foure .section_image {
+    width: 100%;
+    min-height: 125px;
+}
 
 
 
