@@ -404,26 +404,33 @@ li {
         bottom: -42px;
         transform: scaleX(-1);
     }
+
     .module_nine {
         margin: 30px 0px -125px;
     }
-    .module_nine .partner{
+
+    .module_nine .partner {
         padding: 60px 0px;
     }
-    .module_nine .partner .partner_icon img{
+
+    .module_nine .partner .partner_icon img {
         max-width: 240px;
         width: 100%;
     }
-    .module_nine .partner .partner_heading h2{
+
+    .module_nine .partner .partner_heading h2 {
         padding: 0px 20px;
     }
-    .module_nine .partner .partner_describe{
+
+    .module_nine .partner .partner_describe {
         max-width: 100%;
     }
-    .module_nine .partner .partner_describe p{
+
+    .module_nine .partner .partner_describe p {
         font-size: 17px;
     }
-    .module_nine .partner .partner_btn a{
+
+    .module_nine .partner .partner_btn a {
         font-size: 13px;
         text-decoration: none;
         padding: 16px 32px;
@@ -436,7 +443,8 @@ li {
         text-align: center;
         color: #000;
     }
-    .module_nine .partner .partner_btn a:hover{
+
+    .module_nine .partner .partner_btn a:hover {
         background-color: transparent;
         color: #fff;
     }
@@ -522,23 +530,34 @@ li {
         flex-basis: 29%;
     }
 
-    .our_integrate_image img {
-        min-height: 332px;
-        max-width: 417px;
-        width: 100%;
-
+    .happy_customer_response .right-time li {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: -0.8px;
+        line-height: 44px;
+        padding: 8px 0px 8px 30px;
+        color: #fff;
     }
+}
 
-    .our_integrate_left {
-        flex-basis: 41%;
-    }
 
-    .our_integrate_image {
-        flex-basis: 59%;
-    }
+.our_integrate_image img {
+    min-height: 332px;
+    max-width: 417px;
+    width: 100%;
 
-    .our_integrate_left .our_integrate_describe p {
-        font-size: 15px;
-    }
+}
+
+.our_integrate_left {
+    flex-basis: 41%;
+}
+
+.our_integrate_image {
+    flex-basis: 59%;
+}
+
+.our_integrate_left .our_integrate_describe p {
+    font-size: 15px;
+}
 
 }
