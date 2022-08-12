@@ -30,7 +30,7 @@ body {
 
 p {
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 30px;
     color: #030047;
     font-family: 'Inter', sans-serif;
@@ -255,7 +255,9 @@ li {
     .tabber-section .tabber-contents {
         border: 1px solid #695ff7;
     }
-
+    .tabber-section .tabber-heading {
+        padding: 52px 0px 48px 90px;
+    }
     .tabber-section .tabber-contents li {
         font-size: 16px;
         line-height: 1.2;
@@ -336,6 +338,7 @@ li {
 
     .happy_customer_heading h2 {
         padding: 0px 20px;
+    
     }
 
     .happy_customer_describe p {
@@ -350,6 +353,9 @@ li {
 
     .happy_customer_response {
         display: block;
+    }
+    .happy_customer_response .left-time h2{
+        font-size: 52px;
     }
 
     .happy_customer_response .left-time p {
@@ -427,7 +433,7 @@ li {
     }
 
     .module_nine .partner .partner_describe p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .module_nine .partner .partner_btn a {
@@ -447,6 +453,22 @@ li {
     .module_nine .partner .partner_btn a:hover {
         background-color: transparent;
         color: #fff;
+    }
+    .footer_section{
+        display: block;
+    }
+    .footer_first_section{
+        display: block;
+    }
+    .footer_section_right .footer_field_logos {
+        text-align: center;
+    }
+    .footer_section_right .footer_field_adders p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .footer_section_right .footer_field_verfiy p{
+        text-align: center;
     }
 }
 
@@ -505,6 +527,9 @@ li {
     .grow-business_background:before {
         width: 100%;
     }
+    .tabber-section .tabber-heading {
+        padding: 52px 0px 48px 90px;
+    }
 
     .tabber-section .tabber-contents li {
         font-size: 27px;
@@ -538,7 +563,7 @@ li {
         padding: 8px 0px 8px 30px;
         color: #fff;
     }
-}
+
 
 
 .our_integrate_image img {
@@ -559,5 +584,22 @@ li {
 .our_integrate_left .our_integrate_describe p {
     font-size: 15px;
 }
+.footer_section_left .footer_first_section .footer_first_field {
+    margin-right: 6.5%;
+}
 
+}
+@media (min-width:320px){
+    .module_nine .partner .partner_btn a{
+        padding: 16px 10px;
+    }
+    .qutoes_reviews1 .quotes_image img {
+        width: 29px;
+        position: relative;
+        left: 19px;
+        bottom: -31px;
+        transform: scaleX(-1);
+    }
+   
+    
 }
