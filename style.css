@@ -36,6 +36,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 25px gray;
 }
 
 .icon {
@@ -141,6 +142,9 @@ span.button-hover {
     width: 100%;
     margin: 0 auto;
     max-width: 570px;
+}
+.counter_customer .counter_heading h4{
+    text-align: center;
 }
 
 .counter_customer .three_col {
@@ -254,6 +258,9 @@ span.button-hover {
     max-width: 495px;
     display: inline-block;
 }
+.grow-business_heading h2{
+    font-size: 45px;
+}
 
 .grow-business_paragraph {
     max-width: 592px;
@@ -262,7 +269,7 @@ span.button-hover {
 
 .grow-business_paragrap p {
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: .5px;
     line-height: 30px;
     color: #030047;
@@ -305,7 +312,7 @@ span.button-hover {
 }
 
 .module_foure .section_image {
-    margin-bottom: 41px;
+    margin-bottom: -38px;
 }
 
 /* MODULE FOURE end IMAGE SECTION */
@@ -317,7 +324,7 @@ span.button-hover {
 }
 
 .tabber-section .tabber-heading {
-    padding: 0px 0px 48px 84px;
+    padding: 0px 0px 48px 88px;
 }
 
 
@@ -333,7 +340,9 @@ span.button-hover {
 }
 
 .tabber-section .tabber-right {
-    flex-basis: 50%;
+    flex-basis: 46%;
+    margin-left: 4%;
+  
 }
 
 .tabber-section .tabber-image img {
@@ -347,7 +356,7 @@ span.button-hover {
 }
 
 .tabber-section .tabber-contents li {
-    font-size: 27px;
+    font-size: 28px;
     line-height: 34px;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
@@ -355,6 +364,7 @@ span.button-hover {
     color: #000;
     margin-bottom: 20px;
     position: relative;
+    margin-right: 12%;
     z-index: 1;
     padding-left: 85px;
 
@@ -362,6 +372,7 @@ span.button-hover {
 
 .tabber-section .tabber-contents li:hover {
     color: #695ff7;
+    transition: 1000ms;
 
 }
 
@@ -459,7 +470,7 @@ span.button-hover {
     content: '';
     position: absolute;
     bottom: -16%;
-    right: 90px;
+    right: 100px;
     width: 161px;
     height: 186px;
     background-image: url(Happy\ Golden.svg);
@@ -527,7 +538,7 @@ span.button-hover {
 }
 
 .happy_customer_response .left-time h2 {
-    font-size: 65px;
+    font-size: 60px;
     color: #ffcc3e;
 }
 
@@ -543,11 +554,11 @@ span.button-hover {
 }
 
 .happy_customer_response .right-time ul {
-    border-left: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255 255 255 /.5);
 }
 
 .happy_customer_response .right-time ul li:not(:last-child) {
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255 255 255 /.5);
 }
 
 .happy_customer_response .right-time li {
@@ -570,9 +581,9 @@ span.button-hover {
 
 }
 
-
+/* module egiht start */
 .module_eight {
-    padding: 100px 0px;
+    padding: 0px 0px 72px;
 }
 
 .module_eight .our_integrate {
@@ -623,6 +634,7 @@ span.button-hover {
     min-height: 429px;
     max-width: 467px;
     margin-left: 5%;
+    margin-top: 17%;
     width: 100%;
 
 
@@ -684,7 +696,7 @@ span.button-hover {
 .module_nine .partner {
     background: transparent linear-gradient(8deg, #030047 0%, #695ff7 100%) 0% 0%;
     border-radius: 10px;
-    padding: 150px 0px 124px;
+    padding: 140px 0px 124px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -723,4 +735,106 @@ span.button-hover {
 }
 .module_nine .partner .partner_btn a:hover{
     background-color: #ffcc3e;
+}
+/* module nine partner end */
+
+/* module ten footer section start */
+
+
+/* MODULE TEN START FOOTER */
+
+.module_ten{
+    padding: 245px 0px 165px;
+    background-color: #030047;
+    color: #fff;
+}
+
+
+
+.footer_first_section .footer_first_field h6{
+    color: #fff;
+    border-bottom: none;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 33px;
+}
+.footer_first_section .footer_second_field ul li a{
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+.footer_first_section .footer_second_field ul li a:hover{
+    color: #ffcc3e;
+    transition: 1000ms;
+}
+
+.footer_section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.footer_section_left{
+    flex-basis: 70%;
+}
+.footer_section_right{
+    flex-basis: 30%;
+}
+.footer_first_section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.footer_section_left .footer_first_section .footer_first_field {
+    margin-right: 10.5%;
+}
+
+.footer_section_right .footer_field_image {
+    max-width: 100%;
+    height: auto;
+}
+.footer_section_right .footer_field_image img{
+    width: 100%;
+}
+.footer_section_right .footer_field_logos {
+    text-align: right;
+    padding: 87px 0px 34px;
+}
+.footer_section_right .footer_field_logos i:not(:last-child){
+    margin-right: 15px;
+}
+.footer_section_right .footer_field_logos i{
+font-size: 22px;
+line-height: 1;
+}
+.footer_section_right .footer_field_logos i:hover{
+    color: #ffcc3e;
+    transition: 500ms;
+}
+.footer_section_right .footer_field_adders p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.footer_section_right .footer_field_verfiy p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    color: #fff;
+
+}
+.footer_section_right .footer_field_verfiy span{
+    border-right: 1px solid #fff;
+}
+.footer_section_right .footer_field_verfiy p:hover{
+    color: #ffcc3e;
+    transition: 500ms;
 }
